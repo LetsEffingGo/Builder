@@ -1,0 +1,319 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline
+}
+
+html {
+	font-size: 10px;
+	height: 100%
+}
+
+canvas { width: 100%; position: relative;}
+#avatar { padding: 15px; }
+#avatar img{ width: 110px;}
+#avatar img{ 
+	margin: .2rem;
+    border: 0.5rem solid #343444;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 0.2s;
+	border-radius: 0;
+    padding: 1rem;
+    background-color: #3e3e4b;
+}
+.owl-item {
+    display: inline-block;
+}
+.owl-nav {
+    display: none;
+}
+#Download {
+	width: 200px;
+	border-radius: 0;
+	height: 50px;
+	line-height: 50px;
+	padding: 0;
+	border: none;
+	font-weight: 700;
+	font-size: 15px;
+	box-shadow: none;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+	#Download {
+		height: 61px;
+		line-height: 61px;
+		padding: 0 25px;
+		box-shadow: none;
+		
+	}
+	.hideit {
+		display: none;
+	}
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block
+}
+
+body {
+	font-size: 1.4rem;
+	line-height: 1;
+	height: 100%;
+	font-family: Arial;
+}
+
+img, canvas {
+	vertical-align: top
+}
+
+ol, ul {
+	list-style: none
+}
+
+blockquote, q {
+	quotes: none
+}
+
+blockquote:before, blockquote:after {
+	content: '';
+	content: none
+}
+
+q:before, q:after {
+	content: '';
+	content: none
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+body {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+@media (min-width: 800px) {
+	body {
+		height: 100%
+	}
+}a {
+	color: #0093E1;
+	text-decoration: none
+}
+
+.avatarMaker {
+	//background: #F0F0F2;
+	color: #252527
+}
+
+@media (min-width: 800px) {
+	.avatarMaker {
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: stretch
+	}
+}.avatarMaker .panel-side {
+	color: #eee;
+	background: #22272A;
+	//border-right: 0.1rem solid #191d1f
+}
+
+@media (min-width: 800px) {
+	.avatarMaker .panel-side {
+		position: relative;
+		flex: 0 0 20rem;
+		height: 100%;
+		z-index: 2;
+	}
+}@media (min-width: 1000px) {
+	.avatarMaker .panel-side {
+		flex: 0 0 30rem
+	}
+}.avatarMaker .panel-side .side-header {
+	padding-left: 2rem;
+	line-height: 6rem;
+	font-weight: bold;
+	border-bottom: 0.1rem solid #191d1f
+}
+
+@media (min-width: 800px) {
+	.avatarMaker .panel-side .side-header {
+		padding-left: 0;
+		text-align: center
+	}
+}.avatarMaker .panel-side .side-preview {
+	background: #30373b;
+	text-align: center
+}
+
+.avatarMaker .panel-side .side-preview canvas {
+	width: 100%;
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABIAQMAAABvIyEEAAAABlBMVEX////l5eUJgtBrAAAAG0lEQVQoz2P4DwQfGIBglEUzFgzwg7ijLFqyADZkQszQ4VIUAAAAAElFTkSuQmCC");
+	background-size: 2rem 2rem;
+	border-radius: 0.2rem
+}
+
+@media (min-width: 800px) {
+	.avatarMaker .panel-side .side-preview canvas {
+		max-height: 30rem;
+		max-width: 100%
+	}
+}@media (min-width: 800px) {
+	.avatarMaker .panel-side .side-preview {
+		padding: 1.5rem;
+		border-bottom: 0.1rem solid #191d1f
+	}
+	
+	.avatarMaker .panel-side .side-preview img {
+		border-radius: 0.2rem
+	}
+}.avatarMaker .panel-side .side-menu {
+	position: absolute;
+	top: 0;
+	right: 0
+}
+
+.avatarMaker .panel-side .side-menu li {
+	display: inline-block;
+	height: 6rem;
+	width: 6rem;
+	text-align: center;
+	transition: 0.2s
+}
+
+.avatarMaker .panel-side .side-menu li svg {
+	fill: #eee;
+	transition: 0.2s;
+	height: 2rem;
+	width: 2rem;
+	margin-top: 1.9rem
+}
+
+.avatarMaker .panel-side .side-menu li span {
+	display: none
+}
+
+.avatarMaker .panel-side .side-menu li:hover, .avatarMaker .panel-side .side-menu li:active {
+	color: #eee;
+	background: #0093E1
+}
+
+.avatarMaker .panel-side .side-menu li:hover svg, .avatarMaker .panel-side .side-menu li:active svg {
+	fill: #eee
+}
+
+@media (min-width: 800px) {
+	.avatarMaker .panel-side .side-menu {
+		margin-top: 1rem;
+		position: relative
+	}
+	
+	.avatarMaker .panel-side .side-menu li {
+		display: block;
+		width: auto;
+		line-height: 6rem;
+		padding-left: 4rem;
+		cursor: pointer;
+		background: #2b3135;
+		color: #eee;
+		margin-bottom: 1rem;
+		text-align: left
+	}
+	
+	.avatarMaker .panel-side .side-menu li span {
+		display: inline
+	}
+	
+	.avatarMaker .panel-side .side-menu li svg {
+		float: left;
+		margin-right: 1rem
+	}
+}.avatarMaker .panel-side .side-branding {
+	display: none;
+	position: absolute;
+	bottom: 2rem;
+	left: 0;
+	right: 0;
+	color: #505b62;
+	font-size: 1.2rem;
+	text-align: center
+}
+
+@media (min-width: 800px) {
+	.avatarMaker .panel-side .side-branding {
+		display: block
+	}
+}.avatarMaker .panel-side .side-branding a {
+	color: #505b62;
+	font-weight: bold
+}
+
+@media (min-width: 800px) {
+	.avatarMaker .panel-main {
+		position: relative;
+		flex: 1;
+		display: flex;
+		flex-direction: column
+	}
+}.avatarMaker .panel-main .layers-menu {
+	flex: 0 0 6rem;
+	background: #fff;
+	line-height: 6rem;
+	width: 100%;
+	//overflow: auto;
+}
+
+@media (min-width: 800px) {
+	.avatarMaker .panel-main .layers-menu {
+		overflow: visible
+	}
+}.avatarMaker .panel-main .layers-menu ul {
+	display: flex
+}
+
+.avatarMaker .panel-main .layers-menu ul li {
+	flex: 1;
+	list-style: none;
+	text-align: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	cursor: pointer;
+	color: #636368;
+	border-bottom: 0.1rem solid #e2e2e6
+}
+
+.avatarMaker .panel-main .layers-menu ul li:hover {
+	color: #252527
+}
+
+.avatarMaker .panel-main .layers-menu ul li.tab-active {
+	background: #F0F0F2;
+	color: #252527;
+	border-left: 0.1rem solid #e2e2e6;
+	border-right: 0.1rem solid #e2e2e6;
+	border-bottom: 0.1rem solid #F0F0F2;
+	margin-left: -0.1rem;
+	margin-right: -0.1rem
+}
+
+.avatarMaker .panel-main .layers-menu ul li:first-child.active {
+	border-left: 0;
+	margin-left: 0
+}
+
+.avatarMaker .panel-main .layers-menu ul li:last-child.active {
+	border-right: 0;
+	margin-right: 0
+}

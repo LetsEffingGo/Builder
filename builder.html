@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>LFGO Builder</title>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet"/>
+	<link href="css/base.css" rel="stylesheet"/>
+	<script src="js/LFGO.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+
+	    
+</head>
+<body>
+	
+	
+	<div class="round-effect">
+		<div class="primary-round opacity-3"></div>
+		
+		<div class="gradient-round opacity-3"></div>
+	</div>
+	
+	<header class="p-4 bg-dark text-white sticky-top">
+		<div class="container">
+			<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start" id="main-nav"><a href="#" class="navbar-brand d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+				<img src="img/logo.png" height="40px" />
+			      </a>
+				
+				<ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+					<li><a href="home.html" class="nav-link">Home</a></li>
+					<li><a href="index.html" class="nav-link current-item">Marketplace</a></li>
+					<li><a href="builder.html" class="nav-link">Builder</a></li>
+					<li><a href="#" class="nav-link">Calendar</a></li>
+				</ul>
+				
+				<div class="text-end">
+					<button type="button" class="sc-button">Connect Wallet</button>
+					<button type="button" id="download" class="sc-button d-md-none d-lg-none">Download</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+    <div class="avatarMaker">
+			<aside class="panel-side">
+				<!--<header class="side-header" id="app_brand"><img style="width:200px;" src="img/logo-LFGO.png"></header>-->
+				<div class="side-preview">
+					<canvas width="1080" height="1080" id="canvas"></canvas>
+				</div>
+				<ul class="side-menu">
+					<a id="Download" class="hideit btn btn-success sc-button">Download</a>
+				</ul>
+				<div class="side-branding"><span avm-local="sm_credits">Avatar Maker by</span> <a href="https://letseffinggo.com" target="_blank">LFGO</a></div>
+			</aside>
+			<div class="panel-main">
+					<header class="layers-menu">
+						<div id="menu">
+							<ul id="owl-1" class="owl-carousel">
+								<li class="item" data-tab='background'>background</li>
+								<li class="item tab-active" data-tab='body'>body</li>
+								<li class="item" data-tab='clothing'>clothing</li>
+								<li class="item" data-tab='mouth'>mouth</li>
+								<li class="item" data-tab='eyebrows'>eyebrows</li>
+								<li class="item" data-tab='eyes'>eyes</li>
+								<li class="item" data-tab='hair'>hair</li>
+								<li class="item" data-tab='accessories'>accessories</li>
+							</ul>
+						</div>
+					</header>
+					<div id="avatar">
+							<div id="background">
+								<img class="img-thumbnail" src="img/1_background/1.png" />
+								<img class="img-thumbnail" src="img/1_background/2.png" />
+								<img class="img-thumbnail" src="img/1_background/3.png" />
+								<img class="img-thumbnail" src="img/1_background/4.png"/>
+							</div>
+							
+							<div id="body">
+								<img class="img-thumbnail" src="img/2_body/1.png" />
+								<img class="img-thumbnail" src="img/2_body/2.png" />
+								<img class="img-thumbnail" src="img/2_body/3.png" />
+								<img class="img-thumbnail" src="img/2_body/4.png" />
+								<img class="img-thumbnail" src="img/2_body/5.png" />
+								<img class="img-thumbnail" src="img/2_body/6.png" />
+							</div>
+							
+							<div id="clothing">
+								<img class="img-thumbnail" src="img/3_clothing/1.png" />
+								<img class="img-thumbnail" src="img/3_clothing/2.png" />
+								<img class="img-thumbnail" src="img/3_clothing/3.png" />
+								<img class="img-thumbnail" src="img/3_clothing/4.png" />
+							</div>
+							
+							<div id="mouth">
+								<img class="img-thumbnail" src="img/4_mouth/1.png" />
+								<img class="img-thumbnail" src="img/4_mouth/2.png" />
+								<img class="img-thumbnail" src="img/4_mouth/3.png" />
+								<img class="img-thumbnail" src="img/4_mouth/4.png" />
+							</div>
+							<div id="eyebrows">
+								<img class="img-thumbnail" src="img/5_eyebrows/1.png" />
+								<img class="img-thumbnail" src="img/5_eyebrows/2.png" />
+								<img class="img-thumbnail" src="img/5_eyebrows/3.png" />
+								<img class="img-thumbnail" src="img/5_eyebrows/4.png" />
+							</div>
+
+							<div id="eyes">
+								<img class="img-thumbnail" src="img/6_eyes/1.png" />
+								<img class="img-thumbnail" src="img/6_eyes/2.png" />
+								<img class="img-thumbnail" src="img/6_eyes/3.png" />
+								<img class="img-thumbnail" src="img/6_eyes/4.png" />
+							</div>
+							<div id="hair">
+								<img class="img-thumbnail" src="img/7_hair/1.png" />
+								<img class="img-thumbnail" src="img/7_hair/2.png" />
+								<img class="img-thumbnail" src="img/7_hair/3.png" />
+								<img class="img-thumbnail" src="img/7_hair/4.png" />
+							</div>
+							
+							<div id="accessories">
+								<img class="img-thumbnail" src="img/8_accessories/1.png" />
+								<img class="img-thumbnail" src="img/8_accessories/2.png" />
+								<img class="img-thumbnail" src="img/8_accessories/3.png" />
+								<img class="img-thumbnail" src="img/8_accessories/4.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>		
+	
+	<script>
+		$('#avatar').LFGO();
+		$('#menu ul li').click(function() {
+			$('.tab-active').removeClass('tab-active');
+			$(this).addClass('tab-active');
+			$('#avatar >div').hide();
+			$('#avatar >div#' + $(this).attr('data-tab')).show();
+		});
+		$('#avatar >div').hide();
+		$('#avatar >div#body').show();
+	</script>
+	
+	<script type="text/javascript">
+
+		$('#owl-1').owlCarousel({
+		        nav:false,
+		        dots: false,
+				responsiveClass:true,
+					    responsive:{
+					        0:{
+					            items:4
+					        },
+					        600:{
+					            items:4
+					        },
+					        1000:{
+					            items:8
+					        }
+					    }
+			});
+		
+	</script>
+</body>
+</html>
